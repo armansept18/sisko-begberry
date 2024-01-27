@@ -7,5 +7,6 @@ import "vue-toast-notification/dist/theme-bootstrap.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import bootstrap from "bootstrap/dist/js/bootstrap.bundle.js";
+import "@/assets/css/index.css";
 
 createApp(App).use(router).use(bootstrap).use(ToastPlugin).mount("#app");

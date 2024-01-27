@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiko:wght@400;600&family=Anybody:wght@300;400&family=Murecho:wght@300&family=Newsreader:opsz,wght@6..72,500&display=swap");
+
+body {
+  font-family: "Amiko";
+  margin: auto;
+}
+
+/* Navbar */
+.container-fluid {
+  padding: 10px;
+}
+
+.navbar-nav {
+  font-family: "Anybody";
+}
+
+.input-group {
+  max-width: 250px;
+  width: 100vw;
+}
+.input-group > input {
+  border-radius: 30px;
+  background: transparent;
+  font-size: 12.5px;
+  padding: 10px;
+}
+.input-group-text {
+  border-radius: 30px;
+  background: transparent;
+}
