@@ -1,9 +1,9 @@
 <template>
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-xxl">
+  <nav class="navbar navbar-expand-lg fixed-top bg-transparent">
+    <div class="container-fluid">
       <div class="d-flex justify-content-between align-items-center w-100">
         <div class="d-flex align-items-center">
-          <a class="navbar-brand" href="#">Bagberry.</a>
+          <a class="navbar-brand" style="color: #fff" href="#">Bagberry.</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -39,7 +39,6 @@
             </li>
           </ul>
         </div>
-
         <div class="d-flex align-items-center">
           <div class="input-group bg-transparent">
             <input

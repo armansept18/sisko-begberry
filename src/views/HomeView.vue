@@ -1,23 +1,36 @@
 <template>
   <div class="home">
-    <div class="app-bar">
-      <Navbar />
+    <Navbar />
+    <div
+      class="hero d-flex flex-column justify-content-center align-items-center mt-5"
+    >
+      <h1 class="text-center" style="color: #fff">
+        our timeless bag collections
+      </h1>
+      <p class="text-center" style="color: #fff">
+        Designed for the way you live your life. Bagberry are beautiful in their
+        simplicity
+      </p>
+      <button type="button" class="btn btn-primary">Go to Shop</button>
     </div>
+
     <div>
-      <Hero />
+      <BestSelling />
     </div>
   </div>
 </template>
 
 <script>
 import Navbar from "@/components/Navbar.vue";
-import Hero from "@/components/Hero.vue";
+
+import BestSelling from "@/components/BestSelling.vue";
 
 export default {
   name: "HomeView",
   components: {
     Navbar,
-    Hero,
+
+    BestSelling,
   },
 };
 </script>
