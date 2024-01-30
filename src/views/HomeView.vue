@@ -57,6 +57,8 @@
       </div>
     </div>
     <!-- End of Crossbody Bags -->
+
+    <NewBags />
   </div>
 </template>
 
@@ -64,6 +66,7 @@
 // import Navbar from "@/components/Navbar.vue";
 import BestSelling from "@/components/BestSelling.vue";
 import ExploreCore from "@/components/ExploreCore.vue";
+import NewBags from "@/components/NewBags.vue";
 
 export default {
   name: "HomeView",
@@ -71,6 +74,7 @@ export default {
     // Navbar,
     BestSelling,
     ExploreCore,
+    NewBags,
   },
 };
 </script>
