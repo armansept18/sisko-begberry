@@ -44,8 +44,3 @@ body {
   height: 100vh !important;
   margin: 0 !important;
 }
-
-div > .border-bottom {
-  border-bottom: 2px solid #ebdecd !important;
-  margin-top: 65px;
-}
