@@ -57,8 +57,14 @@
       </div>
     </div>
     <!-- End of Crossbody Bags -->
-
     <NewBags />
+    <div class="border-bottom"></div>
+    <ExploreBlog />
+    <Testimonial />
+
+    <!-- Timeless Bag -->
+    <div class="timeless"></div>
+    <!-- End of Timeless Bag -->
   </div>
 </template>
 
@@ -67,6 +73,8 @@
 import BestSelling from "@/components/BestSelling.vue";
 import ExploreCore from "@/components/ExploreCore.vue";
 import NewBags from "@/components/NewBags.vue";
+import ExploreBlog from "@/components/ExploreBlog.vue";
+import Testimonial from "@/components/Testimonial.vue";
 
 export default {
   name: "HomeView",
@@ -75,6 +83,8 @@ export default {
     BestSelling,
     ExploreCore,
     NewBags,
+    ExploreBlog,
+    Testimonial,
   },
 };
 </script>
@@ -119,5 +129,14 @@ div > .border-bottom {
   letter-spacing: -1px;
   color: #df6724;
   text-align: center;
+}
+
+.timeless {
+  background-image: url("../assets/timeless-bag.png");
+  background-size: cover;
+  background-position: center;
+  margin-top: 71px;
+  max-width: 100vw;
+  height: 700px;
 }
 </style>
