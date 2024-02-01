@@ -65,6 +65,8 @@
     <!-- Timeless Bag -->
     <div class="timeless"></div>
     <!-- End of Timeless Bag -->
+
+    <Footer />
   </div>
 </template>
 
@@ -75,6 +77,7 @@ import ExploreCore from "@/components/ExploreCore.vue";
 import NewBags from "@/components/NewBags.vue";
 import ExploreBlog from "@/components/ExploreBlog.vue";
 import Testimonial from "@/components/Testimonial.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: "HomeView",
@@ -85,6 +88,7 @@ export default {
     NewBags,
     ExploreBlog,
     Testimonial,
+    Footer,
   },
 };
 </script>
