@@ -8,8 +8,8 @@
       </p>
       <button>Explore out blog</button>
     </div>
-    <div class="d-flex">
-      <div class="explore-content">
+    <div class="d-flex gap-2">
+      <div>
         <img
           class="explore-image"
           src="../assets/exploreblog1.png"
@@ -21,7 +21,7 @@
           <p>Continue reading</p>
         </div>
       </div>
-      <div class="explore-content">
+      <div>
         <img
           class="explore-image"
           src="../assets/exploreblog2.png"
@@ -57,12 +57,14 @@ export default {
   font-weight: 300;
   line-height: 110%;
   letter-spacing: 0.52px;
+  max-width: 492px;
 }
 .explore-title > p {
   margin-top: 35px;
   font-size: 19px;
   line-height: 136.068%;
   letter-spacing: -1.33px;
+  max-width: 433px;
 }
 .explore-title > button {
   margin-top: 30px;
@@ -76,6 +78,13 @@ export default {
   gap: 10px;
   flex-shrink: 0;
   padding: 10px 20px;
+}
+.explore-image {
+  max-height: 320px;
+  max-width: 420px;
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
 }
 .explore-item > p:first-child {
   margin-top: 15px;
@@ -94,5 +103,6 @@ export default {
   font-size: 21px;
   line-height: normal;
   letter-spacing: -1.05px;
+  max-width: 460px;
 }
 </style>

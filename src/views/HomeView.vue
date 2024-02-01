@@ -23,23 +23,19 @@
     </div>
 
     <!-- Collections -->
-    <!-- <div class="d-flex justify-content-around align-items-center mt-5">
-      <div>
+    <div class="d-flex justify-content-around mt-5">
+      <div class="position-relative">
         <img class="dazzling-1" src="../assets/dazzling1.png" alt="" />
         <img class="dazzling-2" src="../assets/dazzling2.png" alt="" />
       </div>
-      <div>
-        <div>
+      <div class="position-relative">
+        <div class="collections-title">
           <p>complete your dazzling look with our collections</p>
-          <button class="btn btn-primary">
-            Go to collections <i class="bi bi-arrow-right"></i>
-          </button>
+          <button>Go to collections <i class="bi bi-arrow-right"></i></button>
         </div>
-        <div>
-          <img class="dazzling-3" src="../assets/dazzling3.png" alt="" />
-        </div>
+        <img class="dazzling-3" src="../assets/dazzling3.png" alt="" />
       </div>
-    </div> -->
+    </div>
     <!-- End of Collections -->
 
     <ExploreCore />
@@ -98,6 +94,46 @@ div > .border-bottom {
   border-bottom: 2px solid #ebdecd !important;
   margin-top: 65px;
 }
+
+.collections-title {
+}
+.collections-title > p {
+  font-family: "Anybody";
+  font-size: 45px;
+  font-weight: 300;
+  line-height: 46.57px;
+  max-width: 436px;
+  width: 100vw;
+}
+.collections-title > button {
+  border: none;
+  background-color: #df6724;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  line-height: 24px;
+  max-width: 277px;
+}
+.dazzling-1 {
+  max-width: 689px;
+  max-height: 729px;
+  height: 100vh;
+  width: 100vw;
+}
+.dazzling-2 {
+  position: absolute;
+  max-width: 432px;
+  max-height: 613px;
+  right: -32%;
+  top: 37%;
+}
+.dazzling-3 {
+  position: absolute;
+  max-width: 392px;
+  max-height: 396px;
+  right: -10%;
+}
+
 .cross-body {
   background: #df6724;
   margin-top: 67px;

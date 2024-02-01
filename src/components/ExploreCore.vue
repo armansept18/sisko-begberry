@@ -61,7 +61,7 @@ export default {
 
 <style>
 .explore-core {
-  margin-top: 70px;
+  margin-top: 240px;
   background-color: #eeefe6;
   flex-shrink: 0;
   max-height: 703px;
