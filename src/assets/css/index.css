@@ -4,35 +4,6 @@ body {
   font-family: "Amiko";
 }
 
-/* Navbar */
-.container-fluid {
-  padding: 10px;
-}
-
-.navbar-nav {
-  font-family: "Anybody";
-}
-.nav-item > a {
-  color: #fff !important;
-  font-size: 15px;
-  line-height: normal;
-}
-
-.input-group {
-  max-width: 250px;
-  width: 100vw;
-}
-.input-group > input {
-  border-radius: 30px;
-  background: transparent;
-  font-size: 12.5px;
-  padding: 10px;
-}
-.input-group-text {
-  border-radius: 30px;
-  background: transparent;
-}
-
 .hero {
   background-image: url("../hero-background.png");
   background-size: cover;

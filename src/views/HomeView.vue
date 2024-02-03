@@ -1,19 +1,17 @@
 <template>
   <div class="home">
-    <!-- <Navbar /> -->
+    <Navbar />
 
     <!-- Hero -->
     <div
       class="hero d-flex flex-column justify-content-center align-items-center mt-5"
     >
-      <h1 class="text-center" style="color: #fff">
-        Our timeless bag collections
-      </h1>
-      <p class="text-center" style="color: #fff">
+      <h1 style="color: #fff">Our timeless bag collections</h1>
+      <p style="color: #fff">
         Designed for the way you live your life. Bagberry are beautiful in their
         simplicity
       </p>
-      <button type="button" class="btn btn-primary">Go to Shop</button>
+      <button class="goto-shop">Go to Shop</button>
     </div>
     <!-- End of Hero -->
 
@@ -67,7 +65,7 @@
 </template>
 
 <script>
-// import Navbar from "@/components/Navbar.vue";
+import Navbar from "@/components/Navbar.vue";
 import BestSelling from "@/components/BestSelling.vue";
 import ExploreCore from "@/components/ExploreCore.vue";
 import NewBags from "@/components/NewBags.vue";
@@ -78,7 +76,7 @@ import Footer from "@/components/Footer.vue";
 export default {
   name: "HomeView",
   components: {
-    // Navbar,
+    Navbar,
     BestSelling,
     ExploreCore,
     NewBags,
@@ -90,12 +88,37 @@ export default {
 </script>
 
 <style>
+.hero > h1 {
+  font-size: 62px;
+  font-family: "Anybody";
+  font-weight: 300;
+  line-height: 64.17px;
+  max-width: 480px;
+  text-align: center;
+}
+.hero > p {
+  font-size: 18px;
+  font-family: "Anybody";
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  max-width: 461px;
+  margin-top: 30px;
+}
+.goto-shop {
+  border: none;
+  background-color: #df6724;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 40px;
+  font-size: 18px;
+  line-height: 24.01px;
+  margin-top: 40px;
+}
+
 div > .border-bottom {
   border-bottom: 2px solid #ebdecd !important;
   margin-top: 65px;
-}
-
-.collections-title {
 }
 .collections-title > p {
   font-family: "Anybody";
