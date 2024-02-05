@@ -123,7 +123,7 @@ nav {
   max-width: 228px;
   max-height: 40px;
   border-radius: 30px;
-  color: #fff;
+  color: #fff !important;
   font-family: "Amiko";
   font-size: 12.5px;
   line-height: 16.68px;
