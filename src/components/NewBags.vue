@@ -4,7 +4,9 @@
       class="new-bags-title d-flex justify-content-between align-items-center"
     >
       <p>New bags for all your occasions</p>
-      <p>Explore all bags</p>
+      <router-link class="nav-link" to="/products"
+        >Explore all bags</router-link
+      >
     </div>
     <div class="bag-container">
       <CardBags v-for="bag in bags" :key="bag.id" :bag="bag" />
@@ -60,7 +62,8 @@ export default {
   font-size: 28px;
   margin-left: 65px;
 }
-.new-bags-title > p:last-child {
+.new-bags-title .nav-link {
+  margin: 0;
   text-decoration: underline;
   line-height: normal;
   letter-spacing: -0.96px;

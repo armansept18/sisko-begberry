@@ -3,11 +3,11 @@
     <div class="d-flex justify-content-around align-items-center">
       <p class="nav-title" href="#">Bagberry.</p>
       <div class="navbar-menu d-flex">
-        <p>Home</p>
-        <p>Shop</p>
-        <p>Lookbook</p>
-        <p>Pages</p>
-        <p>Blog</p>
+        <router-link to="/" class="nav-link">Home</router-link>
+        <router-link to="/products" class="nav-link">Shop</router-link>
+        <router-link to="#" class="nav-link">Lookbook</router-link>
+        <router-link to="#" class="nav-link">Pages</router-link>
+        <router-link to="#" class="nav-link">Blog</router-link>
       </div>
       <div class="d-flex gap-4 align-items-center">
         <div class="input-group">
@@ -84,12 +84,16 @@ export default {
 <style>
 nav {
   position: absolute;
+  /* max-width: 1920px; */
   width: 100%;
   z-index: 1000;
   padding: 20px 0;
   border-bottom: 0.1px solid #fff;
 }
 .nav-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Newsreader";
   font-size: 25px;
   font-weight: 500;
@@ -103,6 +107,14 @@ nav {
   line-height: 15.52px;
   gap: 40px;
 }
+.navbar-menu .nav-link {
+  display: inline-block;
+  margin: 0;
+  text-decoration: none;
+}
+.navbar-menu .nav-link:hover {
+  text-decoration: underline;
+}
 .input-container {
   display: flex;
   align-items: center;
@@ -111,6 +123,10 @@ nav {
   max-width: 228px;
   max-height: 40px;
   border-radius: 30px;
+  color: #fff;
+  font-family: "Amiko";
+  font-size: 12.5px;
+  line-height: 16.68px;
 }
 .input-group > input::placeholder {
   color: #fff;

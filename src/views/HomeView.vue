@@ -11,7 +11,9 @@
         Designed for the way you live your life. Bagberry are beautiful in their
         simplicity
       </p>
-      <button class="goto-shop">Go to Shop</button>
+      <router-link to="/products">
+        <button class="goto-shop">Go to Shop</button>
+      </router-link>
     </div>
     <!-- End of Hero -->
 
@@ -29,7 +31,11 @@
       <div class="position-relative">
         <div class="collections-title">
           <p>complete your dazzling look with our collections</p>
-          <button>Go to collections <i class="bi bi-arrow-right"></i></button>
+          <router-link class="nav-link" to="/products">
+            <button class="goto-collections">
+              Go to collections <i class="bi bi-arrow-right"></i>
+            </button>
+          </router-link>
         </div>
         <img class="dazzling-3" src="../assets/dazzling3.png" alt="" />
       </div>
@@ -47,7 +53,9 @@
           Sitting comfortably round the waist, it fastens with a buckle clip on
           an adjustable strap
         </p>
-        <button>Go to crossbody bags</button>
+        <router-link class="m-0" to="/products">
+          <button class="goto-crossbody">Go to crossbody bags</button>
+        </router-link>
       </div>
     </div>
     <!-- End of Crossbody Bags -->
@@ -103,7 +111,7 @@ export default {
   line-height: 24px;
   text-align: center;
   max-width: 461px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .goto-shop {
   border: none;
@@ -113,7 +121,6 @@ export default {
   padding: 10px 40px;
   font-size: 18px;
   line-height: 24.01px;
-  margin-top: 40px;
 }
 
 div > .border-bottom {
@@ -128,7 +135,7 @@ div > .border-bottom {
   max-width: 436px;
   width: 100vw;
 }
-.collections-title > button {
+.goto-collections {
   border: none;
   background-color: #df6724;
   color: #fff;
@@ -152,11 +159,11 @@ div > .border-bottom {
 }
 .dazzling-3 {
   position: absolute;
+  margin-top: 20px;
   max-width: 392px;
   max-height: 396px;
   right: -10%;
 }
-
 .cross-body {
   background: #df6724;
   margin-top: 67px;
@@ -184,7 +191,7 @@ div > .border-bottom {
   margin-top: 36px;
   margin-bottom: 48px;
 }
-.crossbody-item > button {
+.goto-crossbody {
   border: 1px solid #fff;
   padding: 10px 40px;
   border-radius: 30px;

@@ -1,18 +1,18 @@
 <template>
-  <div>
+  <div class="best-selling">
     <p class="title-bestselling">Bestselling Bag</p>
-  </div>
-  <div class="product-container">
-    <CardProduct
-      :product="product"
-      v-for="product in products"
-      :key="product.id"
-    />
+    <div class="product-container">
+      <CardBestSeller
+        :product="product"
+        v-for="product in products"
+        :key="product.id"
+      />
+    </div>
   </div>
 </template>
 
 <script>
-import CardProduct from "@/components/card/CardProduct.vue";
+import CardBestSeller from "@/components/card/CardBestSeller.vue";
 // import axios from "axios";
 import Bella from "@/assets/products-image/bella-clip-frame-purse.png";
 import Webbing from "@/assets/products-image/large-webbing-purse.png";
@@ -23,7 +23,7 @@ import Rafia from "@/assets/products-image/classic-rafia-crossbody-bag.png";
 export default {
   name: "BestSelling",
   components: {
-    CardProduct,
+    CardBestSeller,
   },
   data() {
     return {
@@ -56,22 +56,18 @@ export default {
       this.products = data;
     },
   },
-  //   mounted() {
-  //     axios
-  //       .get("https://sistemtoko.com/public/demo/product")
-  //       .then((res) => {
-  //         console.log("Fetch Data :", res.data.aaData);
-  //         this.setProduct(res.data.aaData);
-  //       })
-  //       .catch((err) => {
-  //         console.error("Error Fetch Data :", err.message);
-  //       });
-  //   },
 };
 </script>
 
 <style scoped>
+.best-selling {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .title-bestselling {
+  align-self: flex-start;
   margin-top: 60px;
   margin-left: 64px;
   margin-bottom: 20px;
@@ -82,5 +78,6 @@ export default {
   align-items: center;
   flex-wrap: wrap;
   gap: 16px;
+  max-width: 1390px;
 }
 </style>

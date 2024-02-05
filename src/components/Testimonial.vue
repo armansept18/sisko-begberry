@@ -16,9 +16,7 @@
           <path d="M0 1L419 1.00004" stroke="#EBDECD" stroke-width="2" />
         </svg>
       </div>
-      <div
-        class="testimonial-image d-flex justify-content-around align-items-center"
-      >
+      <div class="testimonial-image">
         <img src="../assets/vogue-logo.png" alt="" />
         <img src="../assets/glamour-logo.png" alt="" />
         <img src="../assets/marie-clare-logo.png" alt="" />
@@ -57,7 +55,14 @@ export default {
   margin-top: 63px;
 }
 .testimonial-image {
-  width: 75%;
+  max-width: 900px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+.testimonial-image > img {
   margin-bottom: 95px;
+  object-fit: contain;
+  max-width: 150px;
 }
 </style>

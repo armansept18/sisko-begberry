@@ -1,11 +1,13 @@
 <template>
-  <div class="card d-flex" style="width: 264px; height: 328px">
-    <img :src="product.image" class="card-img-top" alt="Product Image" />
-    <div class="card-body d-flex justify-content-between align-items-end">
-      <h5 class="card-title">{{ product.name }}</h5>
-      <p class="card-text">$ {{ product.price }}</p>
+  <router-link class="nav-link" :to="'/products/' + product.id">
+    <div class="card d-flex shadow">
+      <img :src="product.photo" class="card-img-top" alt="Product Image" />
+      <div class="card-body d-flex justify-content-between align-items-end">
+        <p>{{ product.name }}</p>
+        <p>Rp {{ product.price }}</p>
+      </div>
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script>
@@ -19,26 +21,38 @@ export default {
 div > .card {
   background-color: #f2f2f2;
   border: none;
+  width: 264px;
+  height: 328px;
 }
 img {
-  max-width: 129px;
-  width: 100%;
-  max-height: 107px;
-  height: 100%;
-  margin-top: 40px;
-  align-self: center;
+  margin: 0;
+  max-width: 100vw;
+  max-height: 200px;
+  height: 100vh;
+  object-fit: cover;
 }
-.card-title,
-.card-text {
-  font-size: 16px;
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
   line-height: normal;
   text-align: left;
 }
-.card-title {
+.card-body > p:first-child {
+  font-weight: normal;
   letter-spacing: -1.28px;
   max-width: 150px;
 }
-.card-text {
+.card-body > p {
+  font-size: 14px;
   letter-spacing: -0.8px;
+  font-weight: 600;
+}
+.nav-link {
+  margin: 0;
+}
+.check-product {
+  border: none;
 }
 </style>

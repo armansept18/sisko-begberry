@@ -2,7 +2,7 @@
   <div class="explore-core">
     <div class="explore-menu d-flex justify-content-between align-items-center">
       <p>Explore our core bagberry</p>
-      <a href="#">View all</a>
+      <router-link to="/products">View all</router-link>
     </div>
 
     <div class="category-container">

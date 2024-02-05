@@ -46,6 +46,8 @@ export default {
 <style>
 .explore-blog {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 77px;
   margin-left: 63px;
   margin-right: 60px;
