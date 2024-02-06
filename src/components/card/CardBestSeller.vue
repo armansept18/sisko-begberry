@@ -1,9 +1,9 @@
 <template>
   <div class="card d-flex">
-    <img :src="product.image" class="card-img-top" alt="Product Image" />
+    <img :src="product.photo" class="card-img-top" alt="Product Image" />
     <div class="card-body d-flex justify-content-between align-items-end">
       <h5 class="card-title">{{ product.name }}</h5>
-      <p class="card-text">$ {{ product.price }}</p>
+      <p class="card-text">Rp {{ product.price }}</p>
     </div>
   </div>
 </template>
