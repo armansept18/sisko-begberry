@@ -12,6 +12,8 @@
       <div class="d-flex gap-4 align-items-center">
         <div class="input-group">
           <input
+            v-model="search"
+            @keyup.enter="handleSearch"
             type="text"
             class="form-control bg-transparent border-end-0"
             placeholder="Search Products..."
@@ -78,10 +80,13 @@
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Navbar",
-  data() {
-    return {
-      search: "",
-    };
+  methods: {
+    handleSearch() {
+      this.$router.push({
+        name: "products",
+        query: { search_name: this.search },
+      });
+    },
   },
 };
 </script>

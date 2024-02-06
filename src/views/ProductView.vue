@@ -32,6 +32,9 @@
     <div class="product-item">
       <h4 style="align-self: start; margin-bottom: 40px">All products</h4>
       <div class="product-container">
+        <div v-if="products.length === 0">
+          <p>No products found.</p>
+        </div>
         <CardProduct
           :product="product"
           v-for="product in products"
@@ -61,24 +64,37 @@ export default {
   data() {
     return {
       products: [],
-      search: "",
+      search: this.$route.query.search_name || "",
     };
+  },
+  watch: {
+    $route(to, from) {
+      if (to.query.search_name !== from.query.search_name) {
+        this.search = to.query.search_name || "";
+        this.fetchProducts();
+      }
+    },
   },
   methods: {
     setProducts(data) {
       this.products = data;
     },
+    fetchProducts() {
+      axios
+        .get("https://sistemtoko.com/public/demo/product", {
+          params: { search_name: this.search },
+        })
+        .then((res) => {
+          console.log("Fetch Data :", res.data.aaData);
+          this.setProducts(res.data.aaData);
+        })
+        .catch((err) => {
+          console.error("Error Fetch Data :", err.message);
+        });
+    },
   },
   mounted() {
-    axios
-      .get("https://sistemtoko.com/public/demo/product")
-      .then((res) => {
-        console.log("Fetch Data :", res.data.aaData);
-        this.setProducts(res.data.aaData);
-      })
-      .catch((err) => {
-        console.error("Error Fetch Data :", err.message);
-      });
+    this.fetchProducts();
   },
 };
 </script>
